@@ -10,8 +10,8 @@ export default function Introduction() {
   const { messages } = useTranslations();
   const resumeData = messages as TranslationMessages;
   const profile = resumeData?.profile;
-  // Get skills and skillsSummary sections
-  const skillsSection = resumeData?.sections?.skills as SectionType;
+  // skills가 없으면 skillsSummary 첫 카드 내용을 사용 (일부 메시지에는 skills 없음)
+  const skillsSection = (resumeData?.sections?.skills ?? resumeData?.sections?.skillsSummary) as SectionType | undefined;
 
   if (!profile) return null;
 

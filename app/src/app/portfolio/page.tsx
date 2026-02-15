@@ -14,17 +14,17 @@ function PortfolioContent() {
   const [activeFilter, setActiveFilter] = useState<PortfolioCategory>('all');
 
   const portfolioSection = messages?.portfolio;
-  const projects = (portfolioSection?.content as PortfolioProject[]) || [];
 
   // Filter projects based on active filter
   const filteredProjects = useMemo(() => {
+    const projects = (portfolioSection?.content as PortfolioProject[] | undefined) || [];
     if (activeFilter === 'all') {
       return projects;
     }
     return projects.filter((project) =>
       project.category?.includes(activeFilter)
     );
-  }, [projects, activeFilter]);
+  }, [portfolioSection?.content, activeFilter]);
 
   return (
     <div className="min-h-screen transition-colors bg-white dark:bg-gray-900">

@@ -20,7 +20,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>("ko");
   const [messages, setMessages] = useState<TranslationMessages>(
-    koMessages as TranslationMessages
+    koMessages as unknown as TranslationMessages
   );
 
   useEffect(() => {
@@ -75,7 +75,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
             }
           )
         );
-        setMessages(processedKoMessages as TranslationMessages);
+        setMessages(processedKoMessages as unknown as TranslationMessages);
       }
     };
 
