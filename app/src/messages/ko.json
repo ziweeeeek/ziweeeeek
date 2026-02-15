@@ -19,7 +19,7 @@
           "content": [
             {
               "type": "text",
-              "content": "React.js, Next.js 기반으로 간단한 Frontend 개발 직압 가능."
+              "content": "React.js, Next.js 기반으로 간단한 Frontend 개발 직접 가능."
             },
             {
               "type": "text",
@@ -91,33 +91,6 @@
                 {
                   "type": "text",
                   "content": "✓ 프로젝트 3. SHAP 기반 설명력을 활용한, 채팅 시점별 이탈 확률 예측 모델링 PoC"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "variant": "simple",
-          "title": { "type": "text", "content": "주한 미8군 사령부 본부대대" },
-          "description": "2023년 07월 - 2024년 12월",
-          "content": [
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "병역 의무 • 대한민국 육군 병장 카투사 • 만기 전역",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "주한미군 카투사 인력 정보의 데이터베이스 설계 및 시각화 작업"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 2024 구글 머신러닝 부트캠프 5기 수료, 네이버 커넥트 재단 코칭스터디 13기 수료."
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 주한미군 공휴일 정보를 제공하는 웹앱 개발·운영 (MAU 1200명 이상)."
                 }
               ]
             }

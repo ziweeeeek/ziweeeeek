@@ -23,7 +23,6 @@ export interface Section {
 export interface Sections {
   skillsSummary: Section;
   experience: Section;
-  skills?: Section; // 선택: 일부 언어/메시지에서만 사용
   awards: Section;
   languages: Section;
   projects: Section;

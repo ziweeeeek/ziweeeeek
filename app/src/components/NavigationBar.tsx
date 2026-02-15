@@ -39,8 +39,8 @@ export default function NavigationBar() {
   const showPortfolioNav = false;
 
   return (
-    <nav className="sticky top-0 z-50 px-6 py-3 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 print:hidden">
-      <div className="flex items-center justify-between max-w-6xl mx-auto">
+    <nav className="sticky top-0 z-50 py-3 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 print:hidden">
+      <div className="flex items-center justify-between w-full max-w-4xl px-8 mx-auto">
         {/* Logo/Title & Navigation Links */}
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-3">
@@ -248,7 +248,7 @@ export default function NavigationBar() {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="sm:hidden mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
+        <div className="w-full max-w-4xl px-8 mx-auto sm:hidden mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
           {/* Navigation Links */}
           <div className="mb-3 space-y-1">
             <Link

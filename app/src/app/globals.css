@@ -182,12 +182,7 @@ body {
     size: A4;
   }
 
-  /* Avoid breaking inside cards and sections */
-  section,
-  .card,
-  .border {
-    break-inside: avoid;
-  }
+  /* Let sections flow across pages; use explicit utilities for cards */
 
   /* Ensure links are readable in print */
   a {
