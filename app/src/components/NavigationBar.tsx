@@ -34,7 +34,9 @@ export default function NavigationBar() {
     languages.find((lang) => lang.code === language) || languages[0];
 
   const isResumePage = pathname === "/";
-  const isPortfolioPage = pathname === "/portfolio";
+
+  // 포트폴리오 페이지 준비 전까지 네비게이션에서 숨김
+  const showPortfolioNav = false;
 
   return (
     <nav className="sticky top-0 z-50 px-6 py-3 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 print:hidden">
@@ -65,16 +67,18 @@ export default function NavigationBar() {
             >
               Resume
             </Link>
-            <Link
-              href="/portfolio"
-              className={`text-sm font-medium transition-colors ${
-                isPortfolioPage
-                  ? "text-blue-600 dark:text-blue-400"
-                  : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-              }`}
-            >
-              Portfolio
-            </Link>
+            {showPortfolioNav && (
+              <Link
+                href="/portfolio"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === "/portfolio"
+                    ? "text-blue-600 dark:text-blue-400"
+                    : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                }`}
+              >
+                Portfolio
+              </Link>
+            )}
           </div>
         </div>
 
@@ -258,17 +262,19 @@ export default function NavigationBar() {
             >
               <span>Resume</span>
             </Link>
-            <Link
-              href="/portfolio"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className={`w-full flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-colors ${
-                isPortfolioPage
-                  ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
-                  : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              <span>Portfolio</span>
-            </Link>
+            {showPortfolioNav && (
+              <Link
+                href="/portfolio"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`w-full flex items-center gap-3 px-3 py-2 text-sm rounded-lg transition-colors ${
+                  pathname === "/portfolio"
+                    ? "bg-blue-50 text-blue-600 dark:bg-blue-900/20 dark:text-blue-400"
+                    : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                }`}
+              >
+                <span>Portfolio</span>
+              </Link>
+            )}
           </div>
 
           {/* Action Buttons */}
