@@ -1,18 +1,58 @@
 {
   "profile": {
-    "title": { "type": "text", "content": "JIUK KIM" },
+    "title": {
+      "type": "text",
+      "content": "JIUK KIM"
+    },
     "subtitle": "ソフトウェアエンジニア",
-    "description": "データとAIを結びつけて実質的なビジネスインパクトを創出するエンジニアを志向しています。リアルタイムトラフィック環境で安定性とパフォーマンスの両方を考慮したシステム設計を心がけながら、関連技術を学習しプロジェクトへ適用することを目標としています。経営学のドメイン知識を基盤に、データ品質と信頼性を重視するAIバックエンド・データエンジニアとして成長しています。",
+    "description": "バックエンドエンジニアとして、データとAIを活用して実質的なビジネスインパクトを生み出すシステムの設計・実装に注力しています。リアルタイムトラフィックで安定性と性能を両立する分散アーキテクチャを追求し、経営学のドメイン知識を基盤にデータ品質と信頼性を重視するAI・データ指向エンジニアとして成長しています。",
     "items": [
-      { "type": "text", "content": "{{personal.contact.email}}" },
-      { "type": "text", "content": "{{personal.contact.linkedin}}" },
-      { "type": "text", "content": "{{personal.contact.github}}" }
+      {
+        "type": "text",
+        "content": "{{personal.contact.email}}"
+      },
+      {
+        "type": "text",
+        "content": "{{personal.contact.linkedin}}"
+      },
+      {
+        "type": "text",
+        "content": "{{personal.contact.github}}"
+      }
     ]
   },
   "sections": {
     "skillsSummary": {
-      "title": { "type": "text", "content": "保有スキル概要" },
+      "title": {
+        "type": "text",
+        "content": "保有スキル概要"
+      },
       "content": [
+        {
+          "type": "card",
+          "title": {
+            "type": "text",
+            "content": "Software Development"
+          },
+          "content": [
+            {
+              "type": "text",
+              "content": "React.js、Next.jsベースでシンプルなフロントエンドを自走開発できます。"
+            },
+            {
+              "type": "text",
+              "content": "Go、TypeScriptベースでバックエンド開発とトラフィック環境対応の経験があります。"
+            },
+            {
+              "type": "text",
+              "content": "SQL、NoSQL、Redis、GraphQLベースでスキーマ設計とDB活用の経験があります。"
+            },
+            {
+              "type": "text",
+              "content": "Kafka、Docker、AWS、ArgoCD環境でサービスのデプロイとモニタリング経験があります。"
+            }
+          ]
+        },
         {
           "type": "card",
           "title": {
@@ -22,118 +62,59 @@
           "content": [
             {
               "type": "text",
-              "content": "リアルタイムトラフィック環境でLLMまたはベクトル検索を活用した機能開発、プロジェクト主導経験。"
+              "content": "リアルタイムトラフィック環境でLLMまたはベクトル検索を活用した機能開発・プロジェクト経験があります。"
             },
             {
               "type": "text",
-              "content": "LangChain、LangGraphを活用したエージェント基盤自動化サービス、社内PoC実装。"
+              "content": "LangChain、LangGraphを活用したエージェント型自動化サービスの社内PoCを実装しました。"
             },
             {
               "type": "text",
-              "content": "外部API連携用MCPまたはRAGシステム用MCPサーバー、社内PoC実装。"
+              "content": "外部API連携向けMCP、またはRAGシステム向けMCPサーバーの社内PoCを実装しました。"
             },
             {
               "type": "text",
-              "content": "MLflowなどで機械学習ライフサイクル（データ加工、学習、モニタリング、高度化）経験。"
-            },
-            {
-              "type": "text",
-              "content": "QLoRAファインチューニングおよびvLLM、Tritonなどを用いたLLMモデルサービング、サイドプロジェクト経験。"
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "title": { "type": "text", "content": "Software Development" },
-          "content": [
-            {
-              "type": "text",
-              "content": "個人または協業プロジェクトの開発主導および多数の大会受賞経験。"
-            },
-            {
-              "type": "text",
-              "content": "React.js、Next.js基盤で簡単なフロントエンド自主開発が可能。"
-            },
-            {
-              "type": "text",
-              "content": "Go、TypeScript基盤でバックエンド開発およびトラフィック環境対応経験。"
-            },
-            {
-              "type": "text",
-              "content": "SQL、NoSQL、Redis、GraphQL基盤でスキーマ設計およびDB活用経験。"
-            },
-            {
-              "type": "text",
-              "content": "Kafka、Docker、AWS、ArgoCD環境でのサービスデプロイおよびモニタリング経験。"
+              "content": "MLflowなどを用いた機械学習ライフサイクル（データ加工、学習、監視、高度化）の経験があります。"
             }
           ]
         }
       ]
     },
     "experience": {
-      "title": { "type": "text", "content": "職務経歴" },
+      "title": {
+        "type": "text",
+        "content": "職務経歴"
+      },
       "content": [
         {
           "type": "card",
           "variant": "simple",
-          "title": { "type": "text", "content": "株式会社当根マーケット" },
-          "description": "2025年01月 ～ 現在在職中",
+          "title": {
+            "type": "text",
+            "content": "株式会社Karrot"
+          },
+          "description": "2025年1月 - 現在",
           "content": [
             {
               "type": "card",
-              "subtitle": "正社員（インターンシップ転換） • ソフトウェアエンジニア、バックエンド • 当根チャットチーム",
+              "subtitle": "正社員（インターン転換） • ソフトウェアエンジニア、バックエンド",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "Goチャプター、ドメイン中心設計とgRPC基盤分散システム経験"
+                  "content": "Goベース環境でのドメイン駆動設計とgRPCベース分散システムの経験。"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト1. チャット自動翻訳機能：リアルタイムトラフィック処理およびLLMパイプライン分離"
+                  "content": "✓ プロジェクト1. チャット自動翻訳: リアルタイムトラフィック処理とLLM非同期アーキテクチャ設計"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト2. 管理型テンプレートメッセージ機能改善：データフローおよび可視性改善"
+                  "content": "✓ プロジェクト2. セマンティックキャッシング導入: ベクトル検索で年間LLM呼び出しコスト25%削減"
                 },
                 {
                   "type": "text",
-                  "content": "✓ プロジェクト3. セマンティックキャッシング導入：ベクトル検索を活用して年間LLM呼び出しコスト25%削減"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ プロジェクト4. LangGraphを活用した、プロンプト評価および改善自動化エージェント PoC"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ プロジェクト5. SHAP基盤説明性を活用した、チャット時点別離脱確率予測モデリング PoC"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "variant": "simple",
-          "title": { "type": "text", "content": "在韓米第8軍 司令部本部大隊" },
-          "description": "2023年07月 - 2024年12月",
-          "content": [
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "兵役義務 • 大韓民国陸軍 兵長 カトゥサ • 満期除隊",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "在韓米軍カトゥサ人事情報のデータベース設計および可視化作業"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 2024 Google 機械学習ブートキャンプ 第5期修了、Naver Connect財団 コーチングスタディ第13期修了。"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 在韓米軍祝日情報を提供するWebアプリを開発・運営（MAU 1200人以上）。"
+                  "content": "✓ プロジェクト3. SHAP解釈性を活用したチャット時点別離脱確率予測モデリングPoC"
                 }
               ]
             }
@@ -142,63 +123,79 @@
       ]
     },
     "projects": {
-      "title": { "type": "text", "content": "プロジェクト" },
+      "title": {
+        "type": "text",
+        "content": "プロジェクト"
+      },
       "content": [
         {
           "type": "card",
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "管理型メッセージテンプレート機能改善：データ構造および運用可視性改善"
+            "content": "チャット自動翻訳: リアルタイムトラフィック処理とLLM非同期アーキテクチャ設計"
           },
-          "highlights": ["データ構造改善", "運用可視性向上", "発送ログタグ付け自動化", "モニタリングダッシュボード構築"],
+          "highlights": [
+            "リアルタイムトラフィック処理",
+            "LLM非同期アーキテクチャ",
+            "サービス安定性重視",
+            "ユーザー体験改善"
+          ],
           "content": [
             {
               "type": "card",
-              "subtitle": "Why",
+              "subtitle": "Context",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "管理型メッセージはメッセージの内容をテンプレートとして事前に登録し、その後簡単に発送できるテンプレートベースのメッセージング機能です。"
+                  "content": "多言語圏ユーザーの増加により、チャット自動翻訳機能が必要でした。"
                 },
                 {
                   "type": "text",
-                  "content": "しかし、既存の実装では機能が限定的で拡張性に欠けており、発送状況の追跡が困難で全体的な運用状態の把握が難しかったです。"
+                  "content": "チャットは遅延感度が高く、翻訳精度・応答速度・安定性を同時に満たす必要がありました。"
                 },
                 {
                   "type": "text",
-                  "content": "このため、機能の完成度を高め運用安定性を確保するためには、該当データの構造改善が必要で、発送状況を追跡できる標準化された体系が必要でした。"
+                  "content": "LLM呼び出しボトルネックを下げるため、非同期分離アーキテクチャが必要でした。"
                 }
               ]
             },
             {
               "type": "card",
+              "subtitle": "Contribution",
               "variant": "timeline",
-              "subtitle": "How",
               "content": [
                 {
                   "type": "text",
-                  "content": "より多くのメッセージタイプをサポートできるようメッセージテンプレートデータ構造変更およびパイプライン改善。"
+                  "content": "メッセージパイプラインと翻訳処理を分離し、チャット体験への影響を最小化しました。"
                 },
                 {
                   "type": "text",
-                  "content": "メッセージ発送時にリクエストメタデータを活用して標準化されたタグを自動追加。"
+                  "content": "LLM翻訳リクエストにキューイング・ワーカー処理を適用し、トラフィック急増時の処理量を安定化しました。"
                 },
                 {
                   "type": "text",
-                  "content": "様々な次元別の発送状況をモニタリングできるダッシュボード実装。"
+                  "content": "障害・遅延に備えたリトライ/フォールバックとボトルネック観測点をあわせて設計しました。"
+                },
+                {
+                  "type": "text",
+                  "content": "実サービスのトラフィック基準で性能-品質トレードオフを検証し、拡張可能な運用構造を整理しました。"
                 }
               ]
             },
             {
               "type": "card",
-              "subtitle": "What",
+              "subtitle": "Outcome",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "管理型メッセージ機能の完成度を高め、これと連携してメタデータ収集、タグ保存、可視化へとつながるようデータ収集および分析システムを改善し、運用可視性を確保できました。"
+                  "content": "リアルタイムチャットUXを維持したまま、LLM翻訳機能をサービスフローに統合しました。"
+                },
+                {
+                  "type": "text",
+                  "content": "トラフィック変動時でも本チャット経路への影響を抑える非同期パターンを確立しました。"
                 }
               ]
             }
@@ -209,9 +206,13 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "セマンティックキャッシング導入：ベクトル検索を活用して年間LLM呼び出しコスト25%削減"
+            "content": "セマンティックキャッシング導入: ベクトル検索で年間LLM呼び出しコスト25%削減"
           },
-          "highlights": ["インターン主導提案", "ベクトル検索", "内蔵ベクタDB使用", "P95 <1s", "TPS 200/インスタンス"],
+          "highlights": [
+            "インターン主導提案",
+            "リアルタイムベクトル検索",
+            "内蔵ベクタDB活用"
+          ],
           "link": {
             "text": "ポストを見る",
             "url": "https://medium.com/p/af3de9a74d0c"
@@ -219,54 +220,58 @@
           "content": [
             {
               "type": "card",
-              "subtitle": "Why",
+              "subtitle": "Context",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "ユーザー体験のためにLLMを活用してチャット発話を推薦する機能を導入しました。"
+                  "content": "ユーザー体験向上のため、LLMを活用してチャット発話を推薦する機能を導入しました。"
                 },
                 {
                   "type": "text",
-                  "content": "しかし、LLMの頻繁な呼び出しにより年間約9億ウォンのコストが予想される状況でした。"
+                  "content": "ただしLLMの頻繁な呼び出しにより、年間約9億ウォンのコストが見込まれていました。"
                 },
                 {
                   "type": "text",
-                  "content": "このため、類似したユーザー体験を維持しながらコストを削減できる方法が必要でした。"
+                  "content": "そのため、類似のユーザー体験を維持しつつコストを削減する方法が必要でした。"
                 }
               ]
             },
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "How",
+              "subtitle": "Contribution",
               "content": [
                 {
                   "type": "text",
-                  "content": "インターン時代でしたが、リアルタイムベクトル検索を活用したセマンティックキャッシング技法を先に提案。"
+                  "content": "当時は他チームのインターンでしたが、リアルタイムベクトル検索を活用したセマンティックキャッシング手法を先行提案しました。"
                 },
                 {
                   "type": "text",
-                  "content": "実際のチャットデータを埋め込み後、PCAとHDBSCANで意味ベースの会話パターン群集を識別。"
+                  "content": "実チャットデータを埋め込み、PCAとHDBSCANで意味ベースの会話パターンクラスタを識別しました。"
                 },
                 {
                   "type": "text",
-                  "content": "メインサーバーと分離されたアドオン構造、内蔵型ベクタDBを活用してトラフィックの外部転移を防止。"
+                  "content": "メインサーバーと分離したアドオン構造と内蔵型ベクタDBで、トラフィックの外部転送を防止しました。"
                 },
                 {
                   "type": "text",
-                  "content": "負荷テストでネットワークI/Oボトルネックを確認、軽量リソース多重レプリカ構成で同時性に対応。"
+                  "content": "負荷テストでネットワークI/Oボトルネックを確認し、軽量リソースの多重レプリカ構成で同時性に対応しました。"
                 }
               ]
             },
             {
               "type": "card",
-              "subtitle": "What",
+              "subtitle": "Outcome",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "チャットで頻繁に登場する13個の発話意味群集にセマンティックキャッシング技法が適用され、年間LLM呼び出しコスト25%、約2.3億ウォン以上のコスト削減効果を期待できました。"
+                  "content": "チャットで頻出する13個の発話意味クラスタにセマンティックキャッシングを適用しました。"
+                },
+                {
+                  "type": "text",
+                  "content": "年間LLM呼び出しコストを25%削減し、約2.3億ウォン以上のコスト削減効果を実現しました。"
                 }
               ]
             }
@@ -277,136 +282,68 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "LangGraphを活用した、プロンプト評価および改善自動化エージェント PoC"
+            "content": "SHAP解釈性を活用したチャット時点別離脱確率予測モデリングPoC"
           },
-          "highlights": ["マルチターンエージェント", "ペルソナシナリオ", "自動化された評価-改善ループ", "運用可能なプロンプト管理システム"],
-          "link": {
-            "text": "ポストを見る",
-            "url": "https://medium.com/p/7630ca814b0c"
-          },
+          "highlights": [
+            "言語 + 行動シグナル統合学習",
+            "SHAPベースの解釈可能性",
+            "離脱確率ベース対応戦略の探索"
+          ],
           "content": [
             {
               "type": "card",
-              "subtitle": "Why",
+              "subtitle": "Context",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "LLMサービスを構想する際、目的に合わせて最適化されたプロンプトを作成することが重要でした。"
+                  "content": "チャットデータはユーザー体験上の課題を高密度に示す時系列相互作用データです。"
                 },
                 {
                   "type": "text",
-                  "content": "しかし、プロンプトの品質評価は自然言語特性上、一貫した基準で定量化することが困難で、このため試行錯誤による段階的な改善にのみ依存して時間とコストが多くかかりました。"
+                  "content": "テキスト単一シグナルモデルでは、離脱時点と原因を明確に説明することが困難でした。"
                 },
                 {
                   "type": "text",
-                  "content": "このため、多様な状況でのプロンプトの品質をその状況に適切な基準で評価し、さらに改善案を提案できる自動化エージェントが必要でした。"
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "subtitle": "How",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "LangGraphで3つのサブグラフを接続して構成し、ユーザーからシステムプロンプトを入力して自動化された評価-改善ループを設計しました。"
-                },
-                {
-                  "type": "text",
-                  "content": "Plannerグラフは入力されたプロンプトから評価基準を動的に抽出し、その状況に適した多数のペルソナ・シナリオを生成してテスト範囲を定義します。"
-                },
-                {
-                  "type": "text",
-                  "content": "Actorグラフは生成されたペルソナ・シナリオを基に仮想リクエストを並列でシミュレーションして応答を生成し、これを集計して導出された基準に従ってスコアとフィードバックを自動的に算出します。"
-                },
-                {
-                  "type": "text",
-                  "content": "Reflectorグラフは評価結果から改善必要性を判断し、必要時プロンプトを再作成し、人間フィードバックを収斂するループを含めて運用レベルの持続的改善を実装します。"
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "subtitle": "WHAT",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "商用LLMサービス間の相互検証を通じて改善効果を確認し、多様なシナリオでシステムプロンプトを評価・改善する反復可能な自動化ループの実装可能性も検証しました。"
-                },
-                {
-                  "type": "text",
-                  "content": "また、プロンプトを一時的に使用する水準を超え、持続的に運営・管理できるプロンプト管理インフラとして拡張する可能性も共に検討しました。"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "variant": "simple",
-          "title": {
-            "type": "text",
-            "content": "SHAP基盤説明性を活用した、チャット時点別離脱確率予測モデリング PoC"
-          },
-          "highlights": ["言語+行動信号統合学習", "SHAP基盤解釈可能性", "離脱確率ベース対応戦略発掘"],
-          "content": [
-            {
-              "type": "card",
-              "subtitle": "Why",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "チャットデータはサービス内でユーザー相互作用が最も豊富に発生する領域で、ユーザー体験とサービス問題点を把握できる重要なインサイトを含んでいます。"
-                },
-                {
-                  "type": "text",
-                  "content": "しかし、チャットデータは単純なテキストだけでなく時系列的に変化する言語・行動パターンを一緒に含んでおり、既存の単純離脱予測モデルではどの瞬間に、どんな信号によってユーザーが離脱するのかを明確に理解することが困難でした。"
-                },
-                {
-                  "type": "text",
-                  "content": "したがって、チャット時点別離脱確率を精密に推定し、その原因をSHAP基盤で解釈できるモデルが必要で、これを検証するためにPoCを進めました。"
+                  "content": "時点別の離脱確率推定とSHAPベース原因解釈が可能なPoCを実施しました。"
                 }
               ]
             },
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "How",
+              "subtitle": "Contribution",
               "content": [
                 {
                   "type": "text",
-                  "content": "BERT/DistilBERTでテキスト埋め込みを生成し、感情・丁寧度・終了意図など核心言語信号を抽出してフィーチャー形態で構造化しました。"
+                  "content": "BERT/DistilBERT埋め込みと感情・丁寧さ・終了意図シグナルをコア特徴量として構造化しました。"
                 },
                 {
                   "type": "text",
-                  "content": "また応答時間、メッセージ長、反応有無など対話メタデータを結合して時系列的流れを反映したフィーチャーエンジニアリングパイプラインを構築しました。"
+                  "content": "応答時間・メッセージ長・反応有無メタデータを組み合わせ、時系列特徴量パイプラインを構築しました。"
                 },
                 {
                   "type": "text",
-                  "content": "初期にはTransformer基盤シーケンスエンコーダーも検討しましたが、モデルサイズ・推論速度・運用難易度を考慮して最終的にLightGBM基盤モデルを選択し、準リアルタイム処理が可能なように設計しました。"
+                  "content": "推論時間短縮と解釈可能性担保のため、LightGBMベースモデルを採用しました。"
                 },
                 {
                   "type": "text",
-                  "content": "SHAPを活用して各フィーチャーの寄与度を分析しながら、モデルがなぜ特定時点で離脱確率を高く予測したのかリアルタイムモニタリングが可能な解釈構造を作りました。"
+                  "content": "離脱確率上昇要因の時点別追跡可能性確保のため、SHAPベースの特徴量寄与度分析を行いました。"
                 }
               ]
             },
             {
               "type": "card",
-              "subtitle": "What",
+              "subtitle": "Outcome",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "結果的に、軽量なフィーチャーエンジニアリング + LightGBM基盤モデルでチャット進行時点ごとに離脱確率を速く算出でき、準リアルタイムで解釈可能な結果を提供できるようになりました。"
+                  "content": "軽量特徴量エンジニアリング + LightGBMで、チャット時点別離脱確率を迅速に算出し準リアルタイム解釈結果を提供しました。"
                 },
                 {
                   "type": "text",
-                  "content": "この解釈を基に危険信号が発生する時点を早期に捕捉し、具体的な介入アクション仮説を樹立できる可能性を検討しました。"
+                  "content": "解釈結果を基に、リスクシグナル早期検知と介入アクション仮説策定の可能性を検討しました。"
                 }
               ]
             }
@@ -415,55 +352,70 @@
       ]
     },
     "education": {
-      "title": { "type": "text", "content": "学歴" },
+      "title": {
+        "type": "text",
+        "content": "学歴"
+      },
       "content": [
         {
           "type": "card",
-          "title": { "type": "text", "content": "米国 ジョージア工科大学" },
+          "title": {
+            "type": "text",
+            "content": "米国ジョージア工科大学"
+          },
           "level": "secondary",
           "tag": "2024.08 ~ 2026",
-          "subtitle": "在学中、コンピュータ工学 オンライン修士課程",
+          "subtitle": "在学中、コンピュータサイエンス オンライン修士",
           "content": [
             {
               "type": "text",
               "level": "secondary",
-              "content": "機械学習 専門分野進行中"
+              "content": "人工知能特化分野を履修中"
             }
           ]
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "高麗大学校" },
-          "subtitle": "卒業、経営学 学士",
+          "title": {
+            "type": "text",
+            "content": "高麗大学校"
+          },
+          "subtitle": "卒業、経営学学士",
           "tag": "2017.03 ~ 2024.02",
           "content": [
             {
               "type": "text",
               "level": "secondary",
-              "content": "ビジネスアナリティクス トラック修了"
+              "content": "ビジネスアナリティクストラック修了"
             },
             {
               "type": "text",
               "level": "secondary",
-              "content": "ビジネスアナリティクス 学部生学会 創立"
+              "content": "ビジネスアナリティクス学部生学会を創設"
             },
             {
               "type": "text",
               "level": "secondary",
-              "content": "ソフトウェア起業学会 NEXT（멋쟁이사자처럼）"
+              "content": "ソフトウェア起業学会 NEXT（Like Lion）"
             }
           ]
         }
       ]
     },
     "awards": {
-      "title": { "type": "text", "content": "受賞歴" },
+      "title": {
+        "type": "text",
+        "content": "受賞歴"
+      },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "第1回 国防AIアイデアソン" },
+          "title": {
+            "type": "text",
+            "content": "第1回 国防AIアイデアソン"
+          },
           "tag": "2024",
           "content": [
             {
@@ -476,7 +428,10 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "第11回 陸軍起業コンペティション" },
+          "title": {
+            "type": "text",
+            "content": "第11回 陸軍創業コンテスト"
+          },
           "tag": "2024",
           "content": [
             {
@@ -491,7 +446,7 @@
           "level": "secondary",
           "title": {
             "type": "text",
-            "content": "済州 衛星データ活用コンペティション"
+            "content": "済州 衛星データ活用コンテスト"
           },
           "tag": "2023",
           "content": [
@@ -505,18 +460,27 @@
       ]
     },
     "languages": {
-      "title": { "type": "text", "content": "言語" },
+      "title": {
+        "type": "text",
+        "content": "言語"
+      },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "韓国語" },
-          "tag": "母国語"
+          "title": {
+            "type": "text",
+            "content": "韓国語"
+          },
+          "tag": "母語"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "英語" },
+          "title": {
+            "type": "text",
+            "content": "英語"
+          },
           "tag": "上級",
           "content": [
             {
@@ -539,46 +503,46 @@
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "日本語" },
+          "title": {
+            "type": "text",
+            "content": "日本語"
+          },
           "tag": "初級"
         }
       ]
     },
     "certifications": {
-      "title": { "type": "text", "content": "資格" },
+      "title": {
+        "type": "text",
+        "content": "資格"
+      },
       "content": [
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "情報処理技師 筆記合格" },
+          "title": {
+            "type": "text",
+            "content": "情報処理技士 筆記合格"
+          },
           "tag": "2024.03"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "ビッグデータ分析技師" },
+          "title": {
+            "type": "text",
+            "content": "ビッグデータ分析技士"
+          },
           "tag": "2024.06"
         },
         {
           "type": "card",
           "level": "secondary",
-          "title": { "type": "text", "content": "財経管理士" },
+          "title": {
+            "type": "text",
+            "content": "財務管理士"
+          },
           "tag": "2021.11"
-        }
-      ]
-    },
-    "skills": {
-      "title": { "type": "text", "content": "保有技術" },
-      "content": [
-        {
-          "type": "list",
-          "content": [
-            { "type": "text", "content": "Python" },
-            { "type": "text", "content": "Go" },
-            { "type": "text", "content": "TypeScript" },
-            { "type": "text", "content": "Kotlin" },
-            { "type": "text", "content": "Java" }
-          ]
         }
       ]
     }
