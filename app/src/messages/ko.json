@@ -13,43 +13,10 @@
     "skillsSummary": {
       "title": { "type": "text", "content": "보유 역량 요약" },
       "content": [
-        {
-          "type": "card",
-          "title": {
-            "type": "text",
-            "content": "AI Engineering"
-          },
-          "content": [
-            {
-              "type": "text",
-              "content": "실시간 트래픽 환경에서 LLM 또는 벡터 검색을 활용한 기능 개발, 프로젝트 주도 경험."
-            },
-            {
-              "type": "text",
-              "content": "LangChain, LangGraph를 활용한 에이전트 기반 자동화 서비스, 내부 PoC 구현."
-            },
-            {
-              "type": "text",
-              "content": "외부 API 연동을 위한 MCP 또는 RAG 시스템을 위한 MCP 서버, 내부 PoC 구현."
-            },
-            {
-              "type": "text",
-              "content": "MLflow 등으로 머신러닝 라이프사이클 (데이터 가공, 학습, 모니터링, 고도화) 경험."
-            },
-            {
-              "type": "text",
-              "content": "QLoRA 파인튜닝 및 vLLM, Triton 등으로 LLM 모델 서빙, 사이드 프로젝트 경험."
-            }
-          ]
-        },
-        {
+                {
           "type": "card",
           "title": { "type": "text", "content": "Software Development" },
           "content": [
-            {
-              "type": "text",
-              "content": "개인 또는 협업 프로젝트의 개발 주도 및 다수의 대회 수상 경험."
-            },
             {
               "type": "text",
               "content": "React.js, Next.js 기반으로 간단한 Frontend 자체 개발 가능."
@@ -65,6 +32,31 @@
             {
               "type": "text",
               "content": "Kafka, Docker, AWS, ArgoCD 환경에서 서비스 배포 및 모니터링 경험."
+            }
+          ]
+        },
+        {
+          "type": "card",
+          "title": {
+            "type": "text",
+            "content": "AI Engineering"
+          },
+          "content": [
+            {
+              "type": "text",
+              "content": "실시간 트래픽 환경에서 LLM 또는 벡터 검색을 활용한 기능 개발, 프로젝트 경험."
+            },
+            {
+              "type": "text",
+              "content": "LangChain, LangGraph를 활용한 에이전트 기반 자동화 서비스, 내부 PoC 구현."
+            },
+            {
+              "type": "text",
+              "content": "외부 API 연동을 위한 MCP 또는 RAG 시스템을 위한 MCP 서버, 내부 PoC 구현."
+            },
+            {
+              "type": "text",
+              "content": "MLflow 등으로 머신러닝 라이프사이클 (데이터 가공, 학습, 모니터링, 고도화) 경험."
             }
           ]
         }
@@ -94,19 +86,11 @@
                 },
                 {
                   "type": "text",
-                  "content": "✓ 프로젝트 2. 관리형 메시지 템플릿 기능 개선: 데이터 구조 및 운영 가시성 개선"
+                  "content": "✓ 프로젝트 2. 시맨틱 캐싱 도입: 벡터 검색을 활용하여 연간 LLM 호출 비용 25% 절감"
                 },
                 {
                   "type": "text",
-                  "content": "✓ 프로젝트 3. 시맨틱 캐싱 도입: 벡터 검색을 활용하여 연간 LLM 호출 비용 25% 절감"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 프로젝트 4. LangGraph를 활용한, 프롬프트 평가 및 개선 자동화 에이전트 PoC"
-                },
-                {
-                  "type": "text",
-                  "content": "✓ 프로젝트 5. SHAP 기반 설명력을 활용한, 채팅 시점별 이탈 확률 예측 모델링 PoC"
+                  "content": "✓ 프로젝트 3. SHAP 기반 설명력을 활용한, 채팅 시점별 이탈 확률 예측 모델링 PoC"
                 }
               ]
             }
@@ -149,66 +133,6 @@
           "variant": "simple",
           "title": {
             "type": "text",
-            "content": "관리형 메시지 템플릿 기능 개선: 데이터 구조 및 운영 가시성 개선"
-          },
-          "highlights": ["데이터 구조 개선", "운영 가시성 향상", "발송 로그 태깅 자동화", "모니터링 대시보드 구축"],
-          "content": [
-            {
-              "type": "card",
-              "subtitle": "Why",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "관리형 메시지는 메시지의 내용을 템플릿으로 미리 등록하고 이후에 이를 간편하게 발송하는 템플릿 기반 메시징 기능이에요."
-                },
-                {
-                  "type": "text",
-                  "content": "그런데, 기존에는 제한적인 기능만 제공되어 확장성이 부족했고, 발송 현황 추적이 어려워 전체적인 운영 상태를 파악하기 어려웠어요."
-                },
-                {
-                  "type": "text",
-                  "content": "이로 인해, 기능의 완성도를 높이고 운영 안정성을 확보하기 위해서는, 해당 데이터의 구조 개선이 필요했고 발송 현황을 추적할 수 있는 표준화된 체계가 필요했어요."
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "variant": "timeline",
-              "subtitle": "How",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "더 많은 메시지 타입을 지원하도록 메세지 템플릿 데이터 구조 변경 및 파이프라인 개선"
-                },
-                {
-                  "type": "text",
-                  "content": "메시지 발송 시 요청 메타데이터를 활용하여 표준화된 태그를 자동으로 추가."
-                },
-                {
-                  "type": "text",
-                  "content": "다양한 차원별 발송 현황을 모니터링할 수 있는 대시보드 구현."
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "subtitle": "What",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "관리형 메세지 기능의 완성도를 높였고, 이와 연계하여 메타데이터 수집, 태그 저장, 시각화로 이어지도록 데이터 수집 및 분석 체계를 개선하여 운영 가시성을 확보할 수 있었어요."
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "variant": "simple",
-          "title": {
-            "type": "text",
             "content": "시맨틱 캐싱 도입: 벡터 검색을 활용하여 연간 LLM 호출 비용 25% 절감"
           },
           "highlights": ["인턴 주도 제안", "실시간 벡터 검색", "내장 벡터 DB 사용", "P95 <1s", "TPS 200/인스턴스"],
@@ -219,7 +143,7 @@
           "content": [
             {
               "type": "card",
-              "subtitle": "Why",
+              "subtitle": "Context",
               "variant": "timeline",
               "content": [
                 {
@@ -239,7 +163,7 @@
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "How",
+              "subtitle": "Contribution",
               "content": [
                 {
                   "type": "text",
@@ -261,84 +185,16 @@
             },
             {
               "type": "card",
-              "subtitle": "What",
+              "subtitle": "Outcome",
               "variant": "timeline",
               "content": [
                 {
                   "type": "text",
-                  "content": "채팅에서 자주 등장하는 13개의 발화 의미 군집에 시맨틱 캐싱 기법이 적용되었고, 연간 LLM 호출 비용 25%, 약 2.3억 원 이상의 비용 절감 효과를 기대할 수 있었어요." 
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "card",
-          "variant": "simple",
-          "title": {
-            "type": "text",
-            "content": "LangGraph를 활용한, 프롬프트 평가 및 개선 자동화 에이전트 PoC"
-          },
-          "highlights": ["멀티 턴 에이전트", "페르소나 시나리오", "Map-Reduce 병렬 처리", "자동화된 평가-개선 루프"],
-          "link": {
-            "text": "포스트 보기",
-            "url": "https://medium.com/p/7630ca814b0c"
-          },
-          "content": [
-            {
-              "type": "card",
-              "subtitle": "Why",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "LLM 서비스를 구상할 때, 목적에 맞도록 최적화된 프롬프트를 작성하는 것이 중요했어요."
+                  "content": "채팅에서 자주 등장하는 13개의 발화 의미 군집에 시맨틱 캐싱 기법이 적용." 
                 },
                 {
                   "type": "text",
-                  "content": "그런데, 프롬프트의 품질 평가는 자연어 특성상 일관된 기준으로 정량화하기 어려웠고, 이 때문에 시행착오를 통한 점진적인 개선에만 의존하여 시간과 비용이 많이 들었어요."
-                },
-                {
-                  "type": "text",
-                  "content": "이로 인해, 다양한 상황에서의 프롬프트의 품질을 그 상황에 적절한 기준으로 평가하고 나아가 개선안을 제안할 수 있는 자동화 에이전트가 필요했어요."
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "subtitle": "How",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "LangGraph로 3개의 서브 그래프를 연결하여 구성했고, 사용자로부터 시스템 프롬프트를 입력 받아 자동화된 평가-개선 루프를 설계했어요."
-                },
-                {
-                  "type": "text",
-                  "content": "Planner 그래프는 입력된 프롬프트에서 평가 기준을 동적으로 추출하고, 그 상황에 적합한 다수의 페르소나·시나리오를 생성해 테스트 범위를 정의해요."
-                },
-                {
-                  "type": "text",
-                  "content": "Actor 그래프는 생성된 페르소나·시나리오를 기반으로 가상 요청을 Map-Reduce 병렬 방식으로 시뮬레이션해 응답을 생성하고, 이를 집계하여 도출된 기준에 따라 점수와 피드백을 자동으로 산출해요."
-                },
-                {
-                  "type": "text",
-                  "content": "Reflector 그래프는 평가 결과로 개선 필요 여부를 판단하고, 필요 시 프롬프트를 재작성하고, 사람 피드백을 수렴하는 루프를 포함해 운영 수준의 지속 개선을 구현해요."
-                }
-              ]
-            },
-            {
-              "type": "card",
-              "subtitle": "WHAT",
-              "variant": "timeline",
-              "content": [
-                {
-                  "type": "text",
-                  "content": "프롬프트의 개선 효과를 교차 검증을 통해 확인했으며, 다양한 시나리오에서 시스템 프롬프트를 평가·개선하는 반복 가능한 자동화 루프의 구현 가능성도 검증했어요."
-                },
-                {
-                  "type": "text",
-                  "content": "또, 프롬프트를 프로젝트별로 일회성으로 사용하는 것이 아니라, 여러 프로젝트 간에 재사용할 수 있는 관리 체계로 확장할 가능성도 검토했어요."
+                  "content": "연간 LLM 호출 비용 25%, 약 2.3억 원 이상의 비용 절감 효과." 
                 }
               ]
             }
@@ -355,7 +211,7 @@
           "content": [
             {
               "type": "card",
-              "subtitle": "Why",
+              "subtitle": "Context",
               "variant": "timeline",
               "content": [
                 {
@@ -375,7 +231,7 @@
             {
               "type": "card",
               "variant": "timeline",
-              "subtitle": "How",
+              "subtitle": "Contribution",
               "content": [
                 {
                   "type": "text",
@@ -387,7 +243,7 @@
                 },
                 {
                   "type": "text",
-                  "content": "초기에는 Transformer 기반 시퀀스 인코더도 검토했지만, 모델 크기·추론 속도·운영 난이도를 고려해 최종적으로 LightGBM 기반 모델을 선택하여 준실시간 처리가 가능하도록 설계했어요."
+                  "content": "LightGBM 기반 모델을 선택하여 준실시간 처리가 가능하도록 설계했어요."
                 },
                 {
                   "type": "text",
@@ -397,7 +253,7 @@
             },
             {
               "type": "card",
-              "subtitle": "What",
+              "subtitle": "Outcome",
               "variant": "timeline",
               "content": [
                 {
@@ -427,7 +283,7 @@
             {
               "type": "text",
               "level": "secondary",
-              "content": "머신러닝 특화 분야 진행 중"
+              "content": "인공지능 특화 분야 진행 중"
             }
           ]
         },
@@ -565,21 +421,6 @@
           "level": "secondary",
           "title": { "type": "text", "content": "재경관리사" },
           "tag": "2021.11"
-        }
-      ]
-    },
-    "skills": {
-      "title": { "type": "text", "content": "보유 기술" },
-      "content": [
-        {
-          "type": "list",
-          "content": [
-            { "type": "text", "content": "Python" },
-            { "type": "text", "content": "Go" },
-            { "type": "text", "content": "TypeScript" },
-            { "type": "text", "content": "Kotlin" },
-            { "type": "text", "content": "Java" }
-          ]
         }
       ]
     }
